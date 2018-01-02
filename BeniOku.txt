@@ -1,0 +1,12 @@
+# bu porta baglan ve veri gonder 
+nc -u localhost 51001
+#veya
+echo -n "hello" | nc -4u -w1  localhost 51001
+
+# bu porttan decode edilen mesajlari dinle
+nc -ul 51002
+
+# check whether an UDP server is listening on 11190
+nc -vz -u <hostname> 11090
+
+
